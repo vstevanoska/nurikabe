@@ -18,3 +18,4 @@ C:\Users\Viktorija\Desktop\2024_2025\OM\Nurikabe\Nurikabe\Nurikabe\obj\Debug\net
 C:\Users\Viktorija\Desktop\2024_2025\OM\Nurikabe\Nurikabe\Nurikabe\obj\Debug\net8.0-windows\Nurikabe.pdb
 C:\Users\Viktorija\Desktop\2024_2025\OM\Nurikabe\Nurikabe\Nurikabe\obj\Debug\net8.0-windows\Nurikabe.genruntimeconfig.cache
 C:\Users\Viktorija\Desktop\2024_2025\OM\Nurikabe\Nurikabe\Nurikabe\obj\Debug\net8.0-windows\ref\Nurikabe.dll
+C:\Users\Viktorija\Desktop\2024_2025\OM\Nurikabe\Nurikabe\Nurikabe\obj\Debug\net8.0-windows\Nurikabe.sourcelink.json

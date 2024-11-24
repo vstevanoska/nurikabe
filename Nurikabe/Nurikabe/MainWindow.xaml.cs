@@ -58,6 +58,7 @@ namespace Nurikabe
                 }
 
                 drawStartingState();
+                //colorCell(0, 0, Brushes.Black);
             }
             else
             {
@@ -91,30 +92,42 @@ namespace Nurikabe
                     Border border = new Border
                     {
                         BorderBrush = Brushes.Black,
-                        BorderThickness = new System.Windows.Thickness(1)
-                    };
-
-                    string textBlockText = "";
-
-                    if (state[i][j] != 0)
-                        textBlockText = state[i][j].ToString();
-
-                    TextBlock textBlock = new TextBlock
-                    {
-                        Text = textBlockText,
-                        VerticalAlignment = VerticalAlignment.Center,
-                        HorizontalAlignment = HorizontalAlignment.Center,
-                        FontSize = 40,
+                        BorderThickness = new System.Windows.Thickness(1),
                         Background = Brushes.White
                     };
 
-                    border.Child = textBlock;
+                    if (state[i][j] != 0)
+                    {
+                        TextBlock textBlock = new TextBlock
+                        {
+                            Text = state[i][j].ToString(),
+                            VerticalAlignment = VerticalAlignment.Center,
+                            HorizontalAlignment = HorizontalAlignment.Center,
+                            FontSize = 40,
+                            Background = Brushes.White
+                        };
+
+                        border.Child = textBlock;
+                    }
 
                     Grid.SetRow(border, i);
                     Grid.SetColumn(border, j);
                     
                     board.Children.Add(border);
                 }
+            }
+        }
+
+        private void colorCell(int row, int column, Brush brush)
+        {
+            foreach (var cell in board.Children)
+            {
+                if (cell is Border border)
+                {
+                    border.Background = brush;
+
+                    break;
+                }    
             }
         }
     }
